@@ -5,6 +5,7 @@ import { getJwtSecret, JWT_EXPIRES_IN } from "./jwt-config.js";
 import { buildCorsHeaders, corsResponse } from "./cors.js";
 import { createRateLimiter } from "../lib/rateLimit.js";
 
+
 // ---------------------------------------------------------------------------
 // In-memory user storage
 // ---------------------------------------------------------------------------
@@ -304,7 +305,4 @@ async function handler(req, res) {
 
 export default handler;
 
-export { users };
-
-export { usersById, usersByUsername };
-
+export { users, usersById, usersByUsername };
